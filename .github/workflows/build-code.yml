@@ -14,5 +14,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
+          brew install openssl
           which openssl
-          find /opt
+          find /opt | grep -i openssl
